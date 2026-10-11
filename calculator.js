@@ -29,15 +29,17 @@ function calculator (a, operator, b) {
 }
 function displayHistory(){
     if (history.length === 0){
-        return 'No history yet.'
+        return 'There is no calculations stored'
     } else {
          history.forEach((nums, index) => {
-            console.log(`${index }: ${nums}`)
+            return`${index }: ${nums}`
          })
     }
+    return history
 }
 
 //calculator(7, '-', 9)
-calculator(8, '+', 6)
+
+
 
 
